@@ -13,6 +13,6 @@ export function ModeToggles() {
     gap: '10px',
   }}>
     <button onClick={() => client.signal.send({ immersive: { mode: 'toggle' } })}>Toggle immersive mode</button>
-    <button onClick={() => client.signal.send({ notepad: { action: 'toggle' } })}>Toggle notepad</button>
+    <button onClick={() => client.signal({ notepad: { action: 'toggle' } })}>Toggle notepad</button>
   </div>
 }
